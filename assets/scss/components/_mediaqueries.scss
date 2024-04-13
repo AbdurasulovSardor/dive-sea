@@ -1,0 +1,44 @@
+@media screen and (max-width: 1020px) {
+  .nav {
+    &__box {
+      display: none;
+    }
+
+    &__links {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .nav {
+    border-bottom: 1px solid var(--border-color);
+
+    &__menu {
+      display: block;
+    }
+
+    &__list {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+      width: 90%;
+      padding: 30px;
+      border-radius: 12px;
+      transition: all 0.5s ease;
+      z-index: 99;
+      margin: 0 auto;
+      background: var(--body-color);
+    }
+  }
+}

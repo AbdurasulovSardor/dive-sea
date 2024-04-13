@@ -22,14 +22,16 @@
   display: inline-block;
   border-radius: 12px;
   padding: 18px 30px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24.41px;
   letter-spacing: 1%;
   border: 2px solid transparent;
   color: var(--body-color);
   background: var(--first-color-dark);
+  text-transform: uppercase;
   transition: all 0.5s ease;
+  cursor: pointer;
 
   &:hover {
     border-color: var(--first-color-dark);
@@ -49,6 +51,7 @@
   color: var(--first-color-dark);
   border: 2px solid var(--first-color-dark);
   transition: all 0.5s ease;
+  cursor: pointer;
 
   &:hover {
     background: var(--first-color-dark);
