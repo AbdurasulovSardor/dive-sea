@@ -1,3 +1,11 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: var(--body-color);
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -90,5 +98,5 @@
 }
 
 .show-menu {
-  top: 10% !important;
+  top: 90% !important;
 }
