@@ -48,3 +48,65 @@ homeBtn.forEach(btn => {
     }
   })
 })
+
+//-------------------------------------------------------------------
+//-------------------------------------------------------------------
+
+const weeklyList = document.querySelector(".weekly__list");
+const arrowBtn = document.querySelectorAll(".weekly__buttons")
+const firstItemWidth = weeklyList.querySelector(".weekly__item").offsetWidth
+const weeklyChildren = [...weeklyList.children]
+
+let isDragging = false;
+let startX;
+let startScrollLeft;
+let timeoutId;
+let itemPerView = Math.round(weeklyList.offsetWidth / firstItemWidth)
+
+weeklyChildren.slice(-itemPerView).reverse().forEach(item => {
+  weeklyList.insertAdjacentHTML("afterbegin", item.outerHTML)
+})
+
+weeklyChildren.slice(0, itemPerView).forEach(item => {
+  weeklyList.insertAdjacentHTML("beforeend", item.outerHTML)
+})
+
+arrowBtn.forEach(btn => {
+  btn.addEventListener("click", () => {
+    weeklyList.scrollLeft += btn.id === "left" ? -firstItemWidth : firstItemWidth
+  })
+})
+
+const dragStart = e => {
+  isDragging = true
+  weeklyList.classList.add("dragging")
+  startX = e.pageX
+  startScrollLeft = weeklyList.scrollLeft
+}
+
+const dragging = e => {
+  if (!isDragging) return
+  weeklyList.scrollLeft = startScrollLeft - (e.pageX - startX)
+}
+
+const dragStop = () => {
+  isDragging = false
+  weeklyList.classList.remove("dragging")
+}
+
+const infiniteScroll = () => {
+  if (weeklyList.scrollLeft === 0) {
+    weeklyList.classList.add("no-transition")
+    weeklyList.scrollLeft = weeklyList.scrollWidth - (2 * weeklyList.offsetWidth)
+    weeklyList.classList.remove("no-transition")
+  } else if (Math.ceil(weeklyList.scrollLeft) === weeklyList.scrollWidth - weeklyList.offsetWidth) {
+    weeklyList.classList.add("no-transition")
+    weeklyList.scrollLeft = weeklyList.offsetWidth
+    weeklyList.classList.remove("no-transition")
+  }
+}
+
+weeklyList.addEventListener("mousedown", dragStart)
+weeklyList.addEventListener("mousemove", dragging)
+document.addEventListener("mouseup", dragStop)
+weeklyList.addEventListener("scroll", infiniteScroll)
