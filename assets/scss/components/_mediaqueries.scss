@@ -1,15 +1,7 @@
-@media screen and (max-width: 1130px) {
-  .home {
-    &__title {
-      font-size: 53px;
-      line-height: 69px;
-    }
-
-    &__statistic {
-      h4 {
-        font-size: 26px;
-      }
-    }
+@media screen and (max-width: 1300px) {
+  .weekly__list {
+    gap: 10px;
+    grid-auto-columns: calc((100% / 3));
   }
 }
 
@@ -31,16 +23,8 @@
     }
   }
 
-  .home {
-    &__description {
-      font-weight: 400;
-      font-size: 13px;
-      line-height: 20px;
-    }
-
-    &__button {
-      margin-right: 16px;
-    }
+  .home__button {
+    margin-right: 16px;
   }
 
   .btn-black {
@@ -52,11 +36,17 @@
     padding: 12px 20px;
     font-size: 13px;
   }
+
+  .weekly__list {
+    max-width: 100%;
+    grid-auto-columns: 300px;
+  }
 }
 
 @media screen and (max-width: 990px) {
   .home {
-    padding-top: 200px;
+    padding-top: 160px;
+    padding-bottom: 90px;
 
     &__container {
       flex-direction: column;
@@ -82,8 +72,16 @@
       }
     }
 
+    &__title {
+      max-width: 80%;
+      margin: 0 auto;
+      font-size: 53px;
+      line-height: 64px;
+      margin-bottom: 11px;
+    }
+
     &__description {
-      font-size: 18px;
+      font-size: 15px;
       width: 60%;
       margin: 0 auto;
       margin-bottom: 42px;
@@ -138,22 +136,57 @@
     }
   }
 
-  .home__description {
-    font-size: 13px;
+  .home {
+    &__description {
+      font-size: 13px;
+    }
+
+    &__arrow-buttons {
+      left: 120px;
+    }
   }
 
-  .home__arrow-buttons {
-    left: 120px;
+  .weekly {
+    padding: 60px 0;
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      grid-auto-columns: 200px;
+    }
+
+    &__item {
+      width: 200px;
+    }
+
+    &__item-hours {
+      padding: 5px;
+      right: 22px;
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    &__item-button {
+      padding: 10px;
+      font-size: 10px;
+    }
   }
 }
 
 @media screen and (max-width: 440px) {
   .home {
     &__title {
+      max-width: 100%;
       font-size: 47px;
     }
 
     &__description {
+      width: 100%;
       font-size: 11px;
     }
 

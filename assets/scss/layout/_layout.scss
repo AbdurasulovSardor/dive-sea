@@ -59,3 +59,30 @@
     color: var(--body-color);
   }
 }
+
+.arrow__buttons {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 20px;
+  background: #fff;
+  border-radius: 17px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.arrow__button {
+  padding-right: 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &:last-child {
+    padding-right: 0;
+    padding-left: 30px;
+    border-left: 2px solid var(--border-color);
+  }
+}
+
+.arrow__button img {
+  width: 20px;
+  height: 20px;
+}
