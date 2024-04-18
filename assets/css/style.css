@@ -554,6 +554,102 @@ img {
     display: none;
   }
 }
+.collection {
+  overflow: hidden;
+  padding-top: 200px;
+  padding-bottom: 35px;
+}
+.collection__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 64px;
+}
+.collection__list {
+  width: 1200px;
+  margin-bottom: 60px;
+}
+.collection__list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+.collection__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.collection__subtitle:first-child {
+  width: 150px;
+  margin-right: 10px;
+}
+.collection__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.collection__item:first-child {
+  padding-top: 0;
+}
+.collection__user {
+  display: flex;
+  align-items: center;
+  width: 168px;
+}
+.collection__user img {
+  margin-right: 20px;
+}
+.collection__text {
+  width: 100px;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: end;
+}
+.collection__text img {
+  margin-right: 10px;
+}
+.collection__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.collection__name {
+  font-weight: 500;
+  font-size: 18px;
+}
+.collection__username {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--text-color);
+}
+.collection__view-all {
+  width: 102px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 0;
+  margin-left: auto;
+}
+.collection__view-all:hover img {
+  transition: all 0.5s ease;
+  transform: translateX(5px);
+}
+.collection__view-all p {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--text-color);
+}
+.collection__view-all img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 1300px) {
   .weekly__list {
     gap: 10px;
@@ -694,6 +790,26 @@ img {
   .weekly__item-button {
     padding: 10px;
     font-size: 10px;
+  }
+  .collection {
+    padding-top: 100px;
+  }
+  .collection__subtitle:first-child {
+    width: 85px;
+  }
+  .collection__user {
+    width: 105px;
+  }
+  .collection__img {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px !important;
+  }
+  .collection__name {
+    font-size: 15px;
+  }
+  .collection__username {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 440px) {
