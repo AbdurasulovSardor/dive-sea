@@ -6,6 +6,10 @@
 }
 
 @media screen and (max-width: 1020px) {
+  .section-title {
+    font-size: 32px;
+  }
+
   .nav {
     &__box {
       display: none;
@@ -109,6 +113,49 @@
       margin: 0 auto;
     }
   }
+
+  .marketplace__list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .marketplace {
+    padding-top: 20px;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__buttons {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 50px;
+    }
+
+    &__btn {
+      font-size: 10px;
+      padding: 10px;
+
+      &:first-child {
+        display: none;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &__item {
+      width: 70% !important;
+    }
+
+    &__item .weekly__item-img {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 590px) {
@@ -150,7 +197,6 @@
     padding: 60px 0;
 
     &__title {
-      font-size: 30px;
       margin-bottom: 30px;
     }
 
@@ -200,6 +246,10 @@
 
     &__username {
       font-size: 13px;
+    }
+
+    &__view-all {
+      margin: 0 auto;
     }
   }
 }
