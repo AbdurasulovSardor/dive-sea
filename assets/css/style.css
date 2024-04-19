@@ -460,7 +460,7 @@ img {
 
 .recent-viewed {
   position: absolute;
-  right: 50px;
+  left: 66%;
   bottom: -100px;
   max-width: 260px;
   width: 100%;
@@ -666,6 +666,223 @@ img {
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 50px;
+}
+
+.collector {
+  padding-top: 35px;
+  padding-bottom: 150px;
+}
+.collector__container {
+  display: flex;
+}
+.collector__data {
+  max-width: 461px;
+  width: 100%;
+}
+.collector__subtitle {
+  margin-bottom: 16px;
+}
+.collector__title {
+  margin-bottom: 45px;
+}
+.collector__list {
+  margin-bottom: 70px;
+}
+.collector__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.collector__item:last-child {
+  margin-bottom: 0;
+}
+.collector__item-icon {
+  padding: 6px;
+  background: var(--first-color);
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.collector__item-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.collector__btn {
+  display: flex;
+  align-items: center;
+}
+.collector__btn:hover svg {
+  transform: translateX(5px);
+}
+.collector__btn svg {
+  transition: transform 0.5s ease;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  fill: #fff;
+}
+.collector__information {
+  position: relative;
+  width: 100%;
+}
+.collector__recent-viewed {
+  left: 25%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 1;
+}
+.collector__sellers {
+  position: absolute;
+  top: 45px;
+  right: 20%;
+  max-width: 322px;
+  width: 100%;
+  padding: 26px 21px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.collector__sellers-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 23px;
+}
+.collector__seller {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.collector__seller:last-child {
+  margin-bottom: 0;
+}
+.collector__seller-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.collector__seller-box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.collector__seller-box span {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  background: var(--first-color);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 10px;
+}
+.collector__seller-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+.collector__seller-username {
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--text-color);
+}
+.collector__seller-unfollow {
+  height: 35px;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 0px 13px;
+  border-radius: 7px;
+  background: transparent;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+}
+.collector__notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  max-width: 325px;
+  width: 100%;
+  padding: 11px;
+  border-radius: 12px;
+  background: #fff;
+  z-index: 2;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.collector__notification-symbol {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--first-color);
+  margin-right: 11px;
+}
+.collector__notification-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.collector__notification-icon {
+  position: absolute;
+  top: 22px;
+  left: 65px;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 4px;
+  background: green;
+  border-radius: 2px;
+}
+.collector__notification-icon::before {
+  content: "";
+  position: absolute;
+  top: -35%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 20px;
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  border-bottom: 4.7px solid green;
+}
+.collector__notification-icon::after {
+  content: "";
+  position: absolute;
+  bottom: -35%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 20px;
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  border-top: 4.7px solid green;
+}
+.collector__notification-icon img {
+  width: 7px;
+  height: 7px;
+}
+.collector__notification-description {
+  font-weight: 600;
+  font-size: 12px;
+}
+.collector__notification-description span {
+  color: var(--text-color);
+}
+.collector__notification-date {
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--text-color);
+}
+.collector__notification-img {
+  width: 60px;
+  height: 60px;
+  margin-left: auto;
+}
+
+.follow {
+  background: var(--border-color);
 }
 
 @media screen and (max-width: 1300px) {
