@@ -6,7 +6,9 @@
 }
 
 @media screen and (max-width: 1020px) {
-  .section-title {
+
+  .section-title,
+  .section-subtitle {
     font-size: 32px;
   }
 
@@ -116,6 +118,34 @@
 
   .marketplace__list {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .collector {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__data {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__recent-viewed.recent-viewed {
+      display: block;
+    }
+
+    &__button {
+      display: flex;
+      width: 180px;
+      margin: 0 auto;
+      margin-top: 150px;
+    }
   }
 }
 
@@ -250,6 +280,123 @@
 
     &__view-all {
       margin: 0 auto;
+    }
+  }
+
+  .collector {
+    &__recent-viewed {
+      max-width: 160px;
+      padding: 10px;
+      bottom: 50px;
+
+    }
+
+    &__recent-viewed .recent-viewed__title,
+    &__recent-viewed .recent-viewed__show,
+    &__recent-viewed .recent-viewed__name,
+    &__recent-viewed .recent-viewed__number,
+    &__recent-viewed .recent-viewed__percent {
+      font-size: 10px;
+    }
+
+    &__recent-viewed .recent-viewed__number img {
+      width: 8px;
+    }
+
+    &__recent-viewed .recent-viewed__img {
+      img {
+        object-fit: cover;
+        width: 20px;
+        height: 20px;
+      }
+
+      span {
+        display: none;
+      }
+    }
+
+    &__sellers {
+      max-width: 160px;
+      padding: 10px;
+    }
+
+    &__sellers-title,
+    &__seller-name,
+    &__seller-username {
+      font-size: 10px;
+    }
+
+    &__seller-box {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      span {
+        top: 22px;
+        left: 22px;
+        padding: 1px 4px;
+        font-size: 7px;
+      }
+    }
+
+    &__seller-unfollow {
+      height: 25px;
+      padding: 0px 8px;
+      font-size: 8px;
+    }
+
+    &__notification {
+      max-width: 160px;
+      padding: 10px;
+    }
+
+    &__notification-symbol {
+      width: 5px;
+      height: 5px;
+      margin-right: 5px;
+    }
+
+    &__notification-avatar {
+      width: 20px;
+      height: 20px;
+    }
+
+    &__notification-icon {
+      top: 23px;
+      left: 32px;
+      padding: 1px 2px;
+
+      &::before {
+        border-left: 4.5px solid transparent;
+        border-right: 4.5px solid transparent;
+        border-bottom: 3.7px solid green;
+      }
+
+      &::after {
+        border-left: 4.5px solid transparent;
+        border-right: 4.5px solid transparent;
+        border-top: 3.7px solid green;
+      }
+
+      img {
+        width: 5px;
+        height: 5px;
+      }
+    }
+
+    &__notification-description,
+    &__notification-date {
+      font-size: 8px;
+    }
+
+    &__notification-img {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__button {
+      margin-top: 0;
     }
   }
 }
