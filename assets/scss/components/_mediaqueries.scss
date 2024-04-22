@@ -43,9 +43,23 @@
     font-size: 13px;
   }
 
-  .weekly__list {
-    max-width: 100%;
-    grid-auto-columns: 300px;
+  .weekly {
+    &__title {
+      margin-bottom: 70px;
+    }
+
+    &__list {
+      max-width: 100%;
+      grid-auto-columns: 300px;
+    }
+  }
+
+  .collection__title {
+    margin-bottom: 60px;
+  }
+
+  .marketplace__title {
+    margin-bottom: 40px;
   }
 }
 
@@ -123,6 +137,8 @@
 
 @media screen and (max-width: 820px) {
   .collector {
+    padding-bottom: 30px;
+
     &__container {
       flex-direction: column;
     }
