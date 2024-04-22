@@ -110,3 +110,24 @@ weeklyList.addEventListener("mousedown", dragStart)
 weeklyList.addEventListener("mousemove", dragging)
 document.addEventListener("mouseup", dragStop)
 weeklyList.addEventListener("scroll", infiniteScroll)
+
+
+//-------------------------------------------------------------------
+//-------------------------------------------------------------------
+
+
+const questionBtn = document.querySelectorAll(".questions__btn")
+const questionItems = document.querySelectorAll(".questions__item")
+
+questionBtn.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    questionItems[index].className.includes("question-show") ? btn.textContent = "+" : btn.textContent = "-"
+
+    if (!questionItems[index].className.includes("question-show")) {
+      questionItems.forEach(question => question.classList.remove("question-show"))
+      questionItems[index].classList.add("question-show")
+    } else {
+      questionItems[index].classList.remove("question-show")
+    }
+  })
+})
