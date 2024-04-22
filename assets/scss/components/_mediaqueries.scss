@@ -61,6 +61,18 @@
   .marketplace__title {
     margin-bottom: 40px;
   }
+
+  .questions {
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+      margin-bottom: 60px;
+    }
+  }
+
+
 }
 
 @media screen and (max-width: 990px) {
@@ -161,6 +173,16 @@
       width: 180px;
       margin: 0 auto;
       margin-top: 150px;
+    }
+  }
+
+  .questions {
+    &__item-title {
+      font-size: 15px;
+    }
+
+    &__description {
+      font-size: 13px;
     }
   }
 }
@@ -413,6 +435,22 @@
 
     &__button {
       margin-top: 0;
+    }
+  }
+
+  .questions {
+    &__item-title {
+      font-size: 12px;
+    }
+
+    &__btn {
+      width: 18px;
+      height: 18px;
+      font-size: 13px;
+    }
+
+    &__description {
+      font-size: 10px;
     }
   }
 }

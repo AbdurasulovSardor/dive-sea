@@ -927,6 +927,65 @@ img {
   color: var(--text-color);
 }
 
+.questions {
+  padding: 60px 0;
+}
+.questions__title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--first-color-light);
+}
+.questions__subtitle {
+  text-align: center;
+  margin-bottom: 78px;
+}
+.questions__item {
+  padding-top: 20px;
+  border-bottom: 1px solid var(--text-color);
+}
+.questions__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.questions__item-title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.questions__btn {
+  width: 22px;
+  height: 22px;
+  padding: 0px 5px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 0;
+  border: none;
+  background: var(--first-color);
+  color: #fff;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: all 0.5s ease;
+}
+.questions__description {
+  max-height: 0;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--text-color);
+  transition: all 0.5s;
+}
+
+.question-show .questions__description {
+  max-height: 400px;
+  padding-bottom: 20px;
+}
+
+.question-show .questions__btn {
+  transform: rotate(540deg);
+}
+
 @media screen and (max-width: 1300px) {
   .weekly__list {
     gap: 10px;
@@ -971,6 +1030,12 @@ img {
   }
   .marketplace__title {
     margin-bottom: 40px;
+  }
+  .questions__title {
+    margin-bottom: 10px;
+  }
+  .questions__subtitle {
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 990px) {
@@ -1054,6 +1119,12 @@ img {
     width: 180px;
     margin: 0 auto;
     margin-top: 150px;
+  }
+  .questions__item-title {
+    font-size: 15px;
+  }
+  .questions__description {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -1244,6 +1315,17 @@ img {
   }
   .collector__button {
     margin-top: 0;
+  }
+  .questions__item-title {
+    font-size: 12px;
+  }
+  .questions__btn {
+    width: 18px;
+    height: 18px;
+    font-size: 13px;
+  }
+  .questions__description {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 440px) {
