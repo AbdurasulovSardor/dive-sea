@@ -1,0 +1,42 @@
+.join-community {
+  padding: 65px 0;
+
+  background-image: url(".././images/join-community-line-1.png"), url(".././images/join-community-line-2.png");
+  background-repeat: no-repeat;
+  background-position: center 73px, center 177px;
+  background-size: 865px, 680px;
+
+  &__container {
+    position: relative;
+    padding: 100px 0;
+    background-image: url(".././images/join-community.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 750px;
+  }
+
+  &__data {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 235px 0;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--text-color);
+  }
+}

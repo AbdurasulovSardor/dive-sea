@@ -444,6 +444,34 @@
       }
     }
   }
+
+  .collector {
+    padding-bottom: 0;
+  }
+
+  .join-community {
+    background-position: center 73px, center 152px;
+    background-size: 628px, 494px;
+
+    &__container {
+      padding: 0;
+      background-size: 538px;
+    }
+
+    &__title {
+      margin-bottom: 5px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font-size: 13px;
+      line-height: 20px;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 @media screen and (max-width: 350px) {
