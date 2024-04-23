@@ -53,7 +53,7 @@ homeBtn.forEach(btn => {
 //-------------------------------------------------------------------
 
 const weeklyList = document.querySelector(".weekly__list");
-const arrowBtn = document.querySelectorAll(".weekly__buttons")
+const arrowBtn = document.querySelectorAll(".weekly__button")
 const firstItemWidth = weeklyList.querySelector(".weekly__item").offsetWidth
 const weeklyChildren = [...weeklyList.children]
 
