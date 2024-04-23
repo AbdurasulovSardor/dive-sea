@@ -14,9 +14,8 @@
     max-width: 90%;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 4) - 35px);
-    gap: 40px;
-    margin-left: 40px;
+    grid-auto-columns: calc((100% / 4));
+    margin: 0px auto;
     margin-bottom: 80px;
     scroll-behavior: smooth;
     overflow-x: auto;
@@ -27,15 +26,20 @@
   &__item {
     scroll-snap-align: start;
     position: relative;
-    width: 281px;
     background: #fff;
     padding: 14px;
     border-radius: 23px;
     text-align: initial;
     cursor: grab;
+    margin-left: 30px;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
   &__item-img {
+    width: 100%;
     border-radius: 23px;
     margin-bottom: 12px;
   }
@@ -85,6 +89,11 @@
     gap: 10px;
     font-weight: 500;
     font-size: 16px;
+  }
+
+  &__item-button.btn-black {
+    padding: 10px 15px;
+    font-size: 13px;
   }
 }
 

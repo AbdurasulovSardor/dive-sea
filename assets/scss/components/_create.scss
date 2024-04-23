@@ -1,0 +1,67 @@
+.create {
+  padding: 60px 0;
+  padding-bottom: 150px;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: var(--first-color);
+    border-radius: 30px;
+    padding: 40px 60px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+  }
+
+  &_box {
+    display: flex;
+  }
+
+  &__btn {
+    padding: 18px 25px;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    background: #fff;
+    color: var(--first-color);
+    font-weight: 600;
+    font-size: 21px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:last-child {
+      margin-left: 30px;
+      background: transparent;
+      color: #fff;
+    }
+
+    &:hover {
+      background: transparent;
+      color: #fff;
+    }
+
+    &:last-child:hover {
+      background: #fff;
+      color: var(--first-color);
+    }
+  }
+
+  &__img {
+    max-width: 370px;
+    width: 100%;
+    height: 249px;
+    box-shadow: rgba(255, 255, 255, 0.4) -22px 16px 81px 0px;
+    border-radius: 15px;
+  }
+}
